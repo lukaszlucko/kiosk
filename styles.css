@@ -26,8 +26,11 @@ a {
     align-items: center;
     top: 0;
     width: 100vw;
-    background: #f4f7fc;
+    max-width: 50vw;
+    transform: translate(50%, 0);
+    background: #ffffff;
     box-shadow: 1px 1px 12px #817e7e;
+    border-radius: 0 0 50px 50px;
     padding: 10px 10px;
     font-weight: 700;
 }
@@ -142,6 +145,10 @@ tbody>tr {
     width: 100%;
 }
 
+.calendar-day-off {
+    color: #dfdfdf;
+}
+
 .calendar-production-accepted {
     width: 100%;
     background: #90cf69;
@@ -164,6 +171,7 @@ tbody>tr {
 
 .calendar-day>p {
     float: right;
+    font-weight: 500;
 }
 
 .calendar-day-button {
@@ -198,7 +206,7 @@ tbody>tr {
 }
 
 .calendar-right-bar-element>p {
-    background: #2dadcf;
+    background: #629ebb;
     padding: 5px 10px;
     border-radius: 5px 5px 0 0;
     color: white;
@@ -206,7 +214,7 @@ tbody>tr {
 }
 
 .calendar-right-bar-element-email {
-    background: #2dadcf;
+    background: #629ebb;
 }
 
 .calendar-right-bar-element-email>a {
