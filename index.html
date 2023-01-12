@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-person">
+                <div class="navbar-person-name">
+                    <p>Łukasz Łućko</p>
+                </div>
+                <div class="navbar-person-activities">
+                    <p><a href="#">Zamówienia</a></p>
+                    <p><a href="#">Wykonania</a></p>
+                </div>
+            </div>
+            <div class="navbar-system">
+                <div class="navbar-options">
+                    <p><a href="#">Ustawienia</a></p>
+                </div>
+                <div class="navbar-log">
+                    <p><a href="#">Wyloguj</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="row">
+            <div class="calendar shadow col-10">
+                <div class="calendar-header">
+                    <div class="calendar-header-buttons col-2">
+                        <button class="button-left-arrow">&#171</button>
+                    </div>
+                    <div class="calendar-header-month col-8">
+                        <p>GRUDZIEŃ</p>
+                    </div>
+                    <div class="calendar-header-buttons col-2" style="justify-content: end">
+                        <button class="button-right-arrow">&#187</button>
+                    </div>
+                </div>
+                <div class="calendar-days">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">PON</th>
+                                <th scope="col">WTO</th>
+                                <th scope="col">ŚRO</th>
+                                <th scope="col">CZW</th>
+                                <th scope="col">PIO</th>
+                                <th scope="col">SOB</th>
+                                <th scope="col">NIE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="calendar-production-accepted">
+                                            <p>News</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>2</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>3</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>4</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>5</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>6</p>
+                                        </div>
+                                        <div class="calendar-production-accepted">
+                                            <p>Sport</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>7</p>
+                                        </div>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>8</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>9</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>10</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>11</p>
+                                        </div>
+                                        <div class="calendar-production-accepted">
+                                            <p>Sport</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>12</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>13</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>14</p>
+                                        </div>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>15</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>16</p>
+                                        </div>
+                                        <div class="calendar-production-accepted">
+                                            <p>News</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>17</p>
+                                        </div>
+                                        <div class="calendar-production-in-accept">
+                                            <p>News</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>18</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>19</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>20</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>21</p>
+                                        </div>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>22</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>23</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>24</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>25</p>
+                                        </div>
+                                        <div class="calendar-production-accepted">
+                                            <p>Sport</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>26</p>
+                                        </div>
+                                        <div class="calendar-production-accepted">
+                                            <p>Sport</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>27</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>28</p>
+                                        </div>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>29</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>30</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>31</p>
+                                        </div>
+                                        <div class="calendar-production-in-accept">
+                                            <p>News</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>1</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>2</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>3</p>
+                                        </div>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="calendar-day-button">
+                                        <div class="calendar-day">
+                                            <p>4</p>
+                                        </div>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="calendar-right-bar col-2">
+                <div class="calendar-right-bar-element shadow">
+                    <p>Wynagrodzenie</p>
+                    <h2>16 400 zł</h2>
+                </div>
+                <div class="calendar-right-bar-element shadow">
+                    <p>Ilość dni</p>
+                    <h2>8</h2>
+                </div>
+                <div class="calendar-right-bar-element shadow">
+                    <p>Zatwierdzone dni</p>
+                    <h2>6/8</h2>
+                </div>
+                
+                <div class="calendar-right-bar-element calendar-right-bar-element-email shadow">
+                    <a href="#">Wyślij zestawienie</a>
+                </div>
+            </div>
+        </section>
+        <section class="row produsages">
+            <div class="shadow">
+                <table class="table produsage-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Data</th>
+                            <th scope="col">Produkcja</th>
+                            <th scope="col">Kierwonik produkcji</th>
+                            <th scope="col">Funkcja</th>
+                            <th scope="col">Wynagrodzenie</th>
+                            <th scope="col">Status</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01.12.2022</td>
+                            <td>Polsat News</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>2120 zł</td>
+                            <td><button class="produsage-accepted">Zaakceptowane</button></td>
+                        </tr>
+                        <tr>
+                            <td>06.12.2022</td>
+                            <td>Polsat Sport</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>1980 zł</td>
+                            <td><button class="produsage-accepted">Zaakceptowane</button></td>
+                        </tr>
+                        <tr>
+                            <td>11.12.2022</td>
+                            <td>Polsat Sport</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>1980 zł</td>
+                            <td><button class="produsage-accepted">Zaakceptowane</button></td>
+                        </tr>
+                        <tr>
+                            <td>16.12.2022</td>
+                            <td>Polsat News</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>2120 zł</td>
+                            <td><button class="produsage-accepted">Zaakceptowane</button></td>
+                        </tr>
+                        <tr>
+                            <td>17.12.2022</td>
+                            <td>Polsat News</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>2120 zł</td>
+                            <td><button class="produsage-in-accept">W akceptacji</button></td>
+                        </tr>
+                        <tr>
+                            <td>25.12.2022</td>
+                            <td>Polsat Sport</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>1980 zł</td>
+                            <td><button class="produsage-accepted">Zaakceptowane</button></td>
+                        </tr>
+                        <tr>
+                            <td>26.12.2022</td>
+                            <td>Polsat Sport</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>1980 zł</td>
+                            <td><button class="produsage-accepted">Zaakceptowane</button></td>
+                        </tr>
+                        <tr>
+                            <td>31.12.2022</td>
+                            <td>Polsat News</td>
+                            <td>Łukasz Łućko</td>
+                            <td>Operator kamery</td>
+                            <td>2120 zł</td>
+                            <td><button class="produsage-in-accept">W akceptacji</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
