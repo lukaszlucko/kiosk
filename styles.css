@@ -314,12 +314,15 @@ tbody>tr {
 @keyframes calendar-animation {
     0% {
         opacity: 0;
-        transform: translate(-110%, 0px);
+        transform: scale(.1);
       }
     
-      100% {
+      85% {
         opacity: 1;
-        transform: translate(0%, 0px);
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
       }
 }
 
@@ -341,11 +344,15 @@ tbody>tr {
 @keyframes produsages-animation {
     0% {
         opacity: 0;
-        transform: translate(-110%, 0px);
+        transform: scale(.1);
       }
-    100% {
+    
+      85% {
         opacity: 1;
-        transform: translate(0%, 0px);
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
       }
 }
 
