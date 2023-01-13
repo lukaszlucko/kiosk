@@ -17,6 +17,9 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+.navbar {
+    animation: navbar-animation 1s linear;
+}
 
 .navbar-content {
     position: fixed;
@@ -71,6 +74,7 @@ a {
     padding: 20px;
     border-radius: 5px;
     background: white;
+    animation: calendar-animation 1s linear;
 }
 
 .shadow {
@@ -189,7 +193,7 @@ tbody>tr {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;   
 }
 
 .calendar-right-bar-element {
@@ -198,7 +202,14 @@ tbody>tr {
     width: 100%;
     margin-bottom: 20px;
     margin-left: 20px;
+    animation: right-bar-animation 1s linear;
+    animation-fill-mode: both;
 }
+
+.calendar-right-bar-element:nth-child(1) { animation-delay: 1.25s }
+.calendar-right-bar-element:nth-child(2) { animation-delay: 1.5s }
+.calendar-right-bar-element:nth-child(3) { animation-delay: 1.75s }
+.calendar-right-bar-element:nth-child(4) { animation-delay: 2s }
 
 .calendar-right-bar-element>h2 {
     text-align: center;
@@ -234,6 +245,7 @@ tbody>tr {
     background: white;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 0px #cdcfd3;
+    animation: produsages-animation 1s linear;
 }
 
 .produsages>.shadow {
@@ -287,6 +299,56 @@ tbody>tr {
     cursor: default !important;
 }
 
+@keyframes navbar-animation {
+    0% {
+        opacity: 0;
+        transform: translate(0, -10%);
+      }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes calendar-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-110%, 0px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translate(0%, 0px);
+      }
+}
+
+@keyframes right-bar-animation {
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+      }
+    
+      85% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+@keyframes produsages-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-110%, 0px);
+      }
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0px);
+      }
+}
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
@@ -320,9 +382,11 @@ tbody>tr {
     .row {
         flex-direction: column;
     }
+
     .table>:not(caption)>*>* {
         font-size: 12px;
     }
+
     .calendar-right-bar {
         flex-direction: row;
         margin-top: 30px;
