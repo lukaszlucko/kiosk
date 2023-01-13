@@ -29,7 +29,7 @@ a {
     max-width: 50vw;
     transform: translate(50%, 0);
     background: #ffffff;
-    box-shadow: 1px 1px 12px #817e7e;
+    box-shadow: 0px 0px 12px #d5d5d5;
     border-radius: 0 0 50px 50px;
     padding: 10px 10px;
     font-weight: 700;
@@ -219,11 +219,10 @@ tbody>tr {
 
 .calendar-right-bar-element-email>a {
     display: block;
-    margin: 15px 0;
     color: white !important;
     font-size: 1.5rem;
     text-align: center;
-    margin: 15px 0;
+    margin: 20px auto;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -246,6 +245,10 @@ tbody>tr {
 
 .produsages>.shadow>.table>thead {
     background: none;
+}
+
+.produsage-table {
+    table-layout: auto;
 }
 
 .produsage-table>:not(caption)>*>* {
@@ -281,4 +284,56 @@ tbody>tr {
     color: white;
     border: none;
     cursor: default !important;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    p {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    .col-12-mobile {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    .table>:not(caption)>*>* {
+        font-size: 12px;
+    }
+    .calendar-right-bar {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .calendar-right-bar-element-email>a {
+        max-width: 195px;
+        font-size: 15px;
+        margin: 32px auto;
+    }
+
+    .produsages>.shadow>.table>:not(caption)>*>* {
+        font-size: 12px;
+    }
 }
